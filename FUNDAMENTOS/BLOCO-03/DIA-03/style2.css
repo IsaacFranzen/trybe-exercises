@@ -1,0 +1,26 @@
+div:hover{
+    border-style: solid;
+    border-color: #00008b;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+div:nth-child(-n+3){
+    color: red;
+}
+div:nth-child(n+7){
+    color: pink;
+}
+div:nth-child(+4){
+    color: purple;
+}
+div:nth-child(+5){
+    color: green;
+    font-size: 25px;
+}
+div:nth-child(+6){
+    color: darkblue;
+}
+h3:nth-child(-n+3){
+    font-family: monospace;
+}
