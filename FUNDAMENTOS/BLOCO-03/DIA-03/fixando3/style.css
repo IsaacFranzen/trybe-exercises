@@ -1,0 +1,16 @@
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+p {
+    color: white;
+    text-align: left;
+    background-color: darkblue;
+    font-size: 20px;
+    text-align: center;
+}
+li:hover {
+    background-color: darkcyan;
+    font-family: monospace;
+
+}
