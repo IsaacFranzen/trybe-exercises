@@ -1,0 +1,32 @@
+.ordenada{
+    background-color: yellow;
+
+}
+
+.par{
+    color: green;
+}
+.impar{
+    text-transform:uppercase;
+}
+.header{
+    color: red;
+   
+}
+.teste{
+    font-size: 45px;
+    border: 1px black solid;
+}
+ul li {
+    font-size: 20px;
+}
+ol li em{
+    font-size: 20px;
+    font-weight: bold;
+}
+#cordif{
+    color: blue;
+}
+.java{
+    background-color: pink;
+}
