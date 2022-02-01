@@ -1,0 +1,22 @@
+img{
+    width: 350px;
+    height: 350px;
+}
+ul{ 
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    
+}
+body{
+    background-color: aquamarine;
+}
+#visao{
+    
+    position: relative;
+    left: 380px;
+    top: -150px;
+}
+p{
+    font-size: 20px;
+}
