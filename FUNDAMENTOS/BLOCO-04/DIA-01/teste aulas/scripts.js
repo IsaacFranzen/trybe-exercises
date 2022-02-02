@@ -1,5 +1,5 @@
-const myName = "Isaac Franzen";
-const birthyCity = "Goiânia";
+const myName = 'Isaac Franzen';
+const birthyCity = 'Goiânia';
 let birthyYear = 2000;
 
 console.log(myName);
