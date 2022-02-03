@@ -1,6 +1,7 @@
 const angulo1 = 45;
 const angulo2 = 45;
 const angulo3 = 10;
+let somaDosAngulos = angulo1+angulo2+angulo3
  
 if(angulo1+angulo2+angulo3 > 180){
     console.log('false')
