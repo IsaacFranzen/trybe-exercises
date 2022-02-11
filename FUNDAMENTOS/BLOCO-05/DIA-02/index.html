@@ -1,37 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-<main id="paiDoPai">
-    <section id="pai">
-      <section id="primeiroFilho"></section>
-      <section id="elementoOndeVoceEsta">
-        <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
-      </section>
-      Atenção!
-      <section id="terceiroFilho"></section>
-      <section id="quartoEUltimoFilho"></section>
-    </section>
-  </main>
-<script>
+    <script>
+     let filho1 = document.createElement('h1');
+     filho1.className = 'title';
+     filho1.innerText = 'Exercício 5.2 - JavaScript DOM ';
+     document.body.appendChild(filho1);
+     
 
-let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+     let tagMain = document.createElement('main');
+     tagMain.className = 'main-content';
+     document.body.appendChild(tagMain);
+     
 
-let pai = elementoOndeVoceEsta.parentElement;
-pai.style.color = 'green';
+     let section1 = document.createElement('section');
+     section1.className = 'center-content';
+     tagMain.appendChild(section1);
 
-let textoNovo = elementoOndeVoceEsta.firstElementChild;
-textoNovo.innerText ='teste'
+     let tagP = document.createElement('p');
+     tagP.innerHTML='testando';
+     section1.appendChild(tagP);
 
+     let section2 = document.createElement('section');
+     section2.className = 'left-content';
+     tagMain.appendChild(section2);
+
+     let section3 = document.createElement('section');
+     section3.className = 'right-content';
+     tagMain.appendChild(section3);
+
+     let img = document.createElement('img');
+     img.className='small-image';
+     img.src='https://picsum.photos/200';
+     section2.appendChild(img);
+
+     let ul = document.createElement('ul');
+     let array = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for(index = 0;index < array.length;index +=1){
+            let li = document.createElement('li');
+            li.innerText = array[index];
+            ul.appendChild(li);
+        }
+        section3.appendChild(ul);
+        
+        for(let index = 0; index < 3; index +=1){
+            let h3 = document.createElement('h3');
+            h3.innerText = index;
+            tagMain.appendChild(h3);
+        }
 
 
     
 
-</script>
-</body>
+    
+
+    
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
