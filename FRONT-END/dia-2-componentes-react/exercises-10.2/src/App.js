@@ -1,15 +1,18 @@
 import './App.css';
 import Header from './componetns/Header';
 import Cards from './componetns/Cards';
+import data from './data'
 
 function App() {
   return (
-    <div className="App">
-      <Header title="Pokédex"/>
+    <main className="App">
+      <Header title="Pokédex" />
       <section className='cardsContainer'>
-      <Cards />
+        {data.map((value) => {
+          return <Cards pokemons={value} />
+        })}
       </section>
-    </div>
+    </main>
   );
 }
 
